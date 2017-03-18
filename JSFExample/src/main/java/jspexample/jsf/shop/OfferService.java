@@ -1,4 +1,4 @@
-package src.main.java.jspexample.jsf.shop;
+package main.java.jspexample.jsf.shop;
 
 import java.util.List;
 
