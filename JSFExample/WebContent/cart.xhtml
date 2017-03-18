@@ -5,16 +5,16 @@
 	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
 	xmlns:h="http://xmlns.jcp.org/jsf/html"
 	xmlns:f="http://xmlns.jcp.org/jsf/core">
-
-<ui:composition template="">
-	<ui:define name="header">
-	    Add your header here or delete to use the default
+<ui:composition template="temp/page-temp.xhtml">
+	<ui:define name="panel-top">
+		<section>
+			<h1>Cart</h1>
+			<p> Empty Cart</p>
+			<p><h:outputLink value="index.xhtml"></h:outputLink></p>
+		</section>
 	</ui:define>
-	<ui:define name="content">
-	    Add your content here or delete to use the default
-	</ui:define>
-	<ui:define name="footer">
-	    Add your footer here or delete to use the default
+	<ui:define>
+		
 	</ui:define>
 </ui:composition>
 </html>
