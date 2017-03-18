@@ -18,6 +18,18 @@
 				</section>
 			</h:form>
 		</section>
+		<section>
+			<h:form>
+				<ui:repeat value="#{popularOffers.offers}" var="product">
+					<ui:decorate template="/offer-summary.xhtml">
+						<ui:param name="product" value="#{product}"/>
+						<ui:define name="product-description">
+							<p>#{product.shortDescription}</p>
+						</ui:define>
+					</ui:decorate>
+				</ui:repeat>
+			</h:form>
+		</section>
 	</ui:define>
 	<ui:define name="content">
 		
