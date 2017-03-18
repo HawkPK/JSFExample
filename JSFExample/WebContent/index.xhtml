@@ -9,18 +9,6 @@
 	<ui:param name="pTitle" value="Great choice"/>
 	<ui:define name="panel-top">
 		<section>
-			<h1> It is popular</h1>
-			<h:form>
-				<section>
-					<h2> Load sss</h2>
-					<p> Take it </p>
-					<p><h:outputLink value="details.xhtml"> Details </h:outputLink></p>
-				</section>
-			</h:form>
-			<p>Pawel</p>
-		</section>
-		<section>
-			<p>Pawel</p>
 			<h:form>
 				<ui:repeat value="#{popularOffer.offers}" var="offer">
 					<ui:decorate template="/offer-summary.xhtml">

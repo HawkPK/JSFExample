@@ -19,8 +19,8 @@ public class OfferServiceImpl implements OfferService {
 	
 	public OfferServiceImpl(){
 		Map<Long, Offer> map = new HashMap<>();
-		 map.put(1L, new Offer(1L, "Window", "Clean", new BigDecimal("10.00"), "window"));
-		 map.put(2L, new Offer(2L, "BlackWindow", "Dirty", new BigDecimal("20.00"), "window"));
+		 map.put(1L, new Offer(1L, "Window", "Clean", new BigDecimal("10.00"), "CleanWindow"));
+		 map.put(2L, new Offer(2L, "BlackWindow", "Dirty", new BigDecimal("20.00"), "DirtyWindow"));
     
 		 offers = Collections.unmodifiableMap(map);
 		 popularOffer = Collections.unmodifiableList(new ArrayList<>(offers.values()));
