@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+<ui:composition template="/temp/page-temp.xhtml">
+	<ui:param name="pTitle" value="Great choice"/>
+	<ui:define name="panel-main">
+		<section>
+			<h1> It is popular</h1>
+			<h:form>
+				<section>
+					<h2> Load </h2>
+					<p> Take it </p>
+					<p><h:outputLink value="details.xhtml"> Details </h:outputLink></p>
+				</section>
+			</h:form>
+		</section>
+	</ui:define>
+	<ui:define name="content">
+		
+	</ui:define>
+	<ui:define name="footer">
+		
+	</ui:define>
+</ui:composition>
+</html>
