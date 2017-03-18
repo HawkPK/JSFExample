@@ -5,16 +5,16 @@
       xmlns:h="http://xmlns.jcp.org/jsf/html"
       xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
 <ui:composition>
-    <section class="product-summary">
-        <h:graphicImage library="musicshop" name="#" alt="#{product.name}"/>
-        <h2>#{product.name}</h2>
+    <section>
+        <h:graphicImage library="musicshop" name="#" alt="#{offer.name}"/>
+        <h2>#{offer.name}</h2>
         <ui:insert name="product-description">
             <p>Product description.</p>
         </ui:insert>
-        <p>Price: $ #{product.price} - <h:commandLink>Add to cart</h:commandLink></p>
+        <p>Price: $ #{offer.price} - <h:commandLink>Add to cart</h:commandLink></p>
         <p>
             <h:outputLink value="details.xhtml">
-                <f:param name="productId" value="#{product.id}"/>
+                <f:param name="offerId" value="#{offer.id}"/>
                 Product Details
             </h:outputLink>
         </p>

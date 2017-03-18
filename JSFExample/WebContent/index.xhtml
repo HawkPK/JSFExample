@@ -5,26 +5,28 @@
 	xmlns:h="http://xmlns.jcp.org/jsf/html"
 	xmlns:f="http://xmlns.jcp.org/jsf/core">
 
-<ui:composition template="/temp/page-temp.xhtml">
+<ui:composition template="/page-temp.xhtml">
 	<ui:param name="pTitle" value="Great choice"/>
-	<ui:define name="panel-main">
+	<ui:define name="panel-top">
 		<section>
 			<h1> It is popular</h1>
 			<h:form>
 				<section>
-					<h2> Load </h2>
+					<h2> Load sss</h2>
 					<p> Take it </p>
 					<p><h:outputLink value="details.xhtml"> Details </h:outputLink></p>
 				</section>
 			</h:form>
+			<p>Pawel</p>
 		</section>
 		<section>
+			<p>Pawel</p>
 			<h:form>
-				<ui:repeat value="#{popularOffers.offers}" var="product">
+				<ui:repeat value="#{popularOffer.offers}" var="offer">
 					<ui:decorate template="/offer-summary.xhtml">
-						<ui:param name="product" value="#{product}"/>
+						<ui:param name="product" value="offer"/>
 						<ui:define name="product-description">
-							<p>#{product.shortDescription}</p>
+							<p>#{offer.shortDescription}</p>
 						</ui:define>
 					</ui:decorate>
 				</ui:repeat>

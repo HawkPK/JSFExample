@@ -6,7 +6,7 @@
         <resource-library-contracts>
             <contract-mapping>
                 <url-pattern>*</url-pattern>
-                <contracts>common</contracts>
+                <contracts>temp</contracts>
             </contract-mapping>
         </resource-library-contracts>
     </application>
