@@ -6,6 +6,7 @@
 	xmlns:h="http://xmlns.jcp.org/jsf/html"
 	xmlns:f="http://xmlns.jcp.org/jsf/core">
 <ui:composition template="temp/page-temp.xhtml">
+	<ui:param name="pTitle" value="Cart"/>
 	<ui:define name="panel-top">
 		<section>
 			<h1>Cart</h1>
@@ -13,7 +14,7 @@
 			<p><h:outputLink value="index.xhtml"></h:outputLink></p>
 		</section>
 	</ui:define>
-	<ui:define>
+	<ui:define name="panel-main">
 		
 	</ui:define>
 </ui:composition>
